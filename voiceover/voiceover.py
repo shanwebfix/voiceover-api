@@ -26,5 +26,4 @@ def voiceover():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    # Render requires host=0.0.0.0 and a specific port
     app.run(host="0.0.0.0", port=10000)
