@@ -1,9 +1,11 @@
-import os
 from flask import Flask, request, jsonify, send_file
+from flask_cors import CORS
 from gtts import gTTS
 import io
+import os
 
 app = Flask(__name__)
+CORS(app)  # <-- এই লাইনটি যোগ করো
 
 @app.route("/")
 def index():
